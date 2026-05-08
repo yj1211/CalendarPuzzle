@@ -4,7 +4,11 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from calendar_puzzle import WEEKDAY_NAMES, format_solutions_with_symbols, solve_puzzle
+from calendar_puzzle import (
+    WEEKDAY_NAMES,
+    format_first_solution_as_html_table,
+    solve_puzzle,
+)
 
 
 README_PATH = Path("README.md")
@@ -25,19 +29,21 @@ def build_today_section():
         weekday,
         max_solutions=1,
     )
-    solution_text = format_solutions_with_symbols(solutions, row_info, empty_cells)
+    solution_table = format_first_solution_as_html_table(
+        solutions,
+        row_info,
+        empty_cells,
+    )
 
     lines = [
         START_MARKER,
-        f"## 今日解答",
+        "## 今日解答",
         "",
         f"以 `{TIMEZONE}` 為準，今天是 **{month} 月 {day} 日 {WEEKDAY_NAMES[weekday]}**。",
         "",
-        "```text",
-        solution_text,
-        "```",
+        solution_table,
         "",
-        f"_此區塊由 `update_readme.py` 自動更新。_",
+        "_此區塊由 `update_readme.py` 自動更新。_",
         END_MARKER,
     ]
     return "\n".join(lines)

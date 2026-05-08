@@ -2,12 +2,12 @@
 import argparse
 
 
-BOARD = set(
+BOARD = {
     (r, c)
     for r in range(7)
     for c in range(8)
     if not (r == 6 and c < 5)
-)
+}
 
 PIECES = [
     {"name": "I", "shape": {(0, 0), (0, 1), (0, 2), (0, 3)}},
@@ -220,9 +220,7 @@ class DLX:
             while node != row:
                 self.cover(node.C)
                 node = node.R
-
             self.search()
-
             node = row.L
             while node != row:
                 self.uncover(node.C)
@@ -261,6 +259,17 @@ def solve_puzzle(month, day, weekday, max_solutions=None):
     return dlx.solutions, row_info, empty_cells
 
 
+def build_symbol_grid(solution, row_info, empty_cells):
+    board = [["*" for _ in range(8)] for _ in range(7)]
+    for row_id in solution:
+        name, cells = row_info[row_id]
+        for row, col in cells:
+            board[row][col] = name
+    for row, col in empty_cells:
+        board[row][col] = "*"
+    return [[PIECE_SYMBOLS[cell] for cell in line] for line in board]
+
+
 def render_solution(solution, row_info, empty_cells):
     board = [["*" for _ in range(8)] for _ in range(7)]
     for row_id in solution:
@@ -273,14 +282,7 @@ def render_solution(solution, row_info, empty_cells):
 
 
 def render_solution_with_symbols(solution, row_info, empty_cells):
-    board = [["*" for _ in range(8)] for _ in range(7)]
-    for row_id in solution:
-        name, cells = row_info[row_id]
-        for row, col in cells:
-            board[row][col] = PIECE_SYMBOLS[name]
-    for row, col in empty_cells:
-        board[row][col] = PIECE_SYMBOLS["*"]
-    return [" ".join(line) for line in board]
+    return [" ".join(line) for line in build_symbol_grid(solution, row_info, empty_cells)]
 
 
 def format_solutions(solutions, row_info, empty_cells):
@@ -307,6 +309,29 @@ def format_solutions_with_symbols(solutions, row_info, empty_cells):
     return "\n\n".join(blocks)
 
 
+def format_first_solution_as_html_table(solutions, row_info, empty_cells):
+    if not solutions:
+        return "<p>此拼圖無解</p>"
+
+    grid = build_symbol_grid(solutions[0], row_info, empty_cells)
+    lines = [
+        '<table>',
+        '  <tbody>',
+    ]
+    for row in grid:
+        lines.append("    <tr>")
+        for cell in row:
+            lines.append(f"      <td align=\"center\">{cell}</td>")
+        lines.append("    </tr>")
+    lines.extend(
+        [
+            "  </tbody>",
+            "</table>",
+        ]
+    )
+    return "\n".join(lines)
+
+
 def validate_inputs(month, day, weekday, mode, max_solutions):
     if not 1 <= month <= 12:
         raise ValueError("月份必須介於 1 到 12 之間。")
@@ -325,12 +350,7 @@ def parse_args():
     parser.add_argument("--month", type=int, help="月份，1 到 12")
     parser.add_argument("--day", type=int, help="日期，1 到 31")
     parser.add_argument("--weekday", type=int, help="星期，0=周日，1=周一，...，6=周六")
-    parser.add_argument(
-        "--mode",
-        type=int,
-        choices=(1, 2),
-        help="1=列出解法，2=計算解數量",
-    )
+    parser.add_argument("--mode", type=int, choices=(1, 2), help="1=列出解法，2=計算解數量")
     parser.add_argument(
         "--max-solutions",
         type=int,

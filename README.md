@@ -4,16 +4,17 @@
 
 以 `Asia/Taipei` 為準，今天是 **5 月 9 日 周六**。
 
-```text
-=== 解 1 ===
-🟩 🟩 🟥 🟥 🟥 🟥 🟦 🟦
-🟩 🟩 · 🟧 · 🟧 🟨 🟦
-⚪ 🟫 🟫 🟧 🟧 🟧 🟨 🟨
-⚪ 🟫 🟫 🟫 · 🟪 🟨 ⬛
-⚪ ⬜ ⬜ ⬜ ⬜ 🟪 ⬛ ⬛
-⚪ ⚪ ⬜ 🟪 🟪 🟪 ⬛ ⚫
-· · · · · ⚫ ⚫ ⚫
-```
+<table>
+  <tbody>
+    <tr><td align="center">🟩</td><td align="center">🟩</td><td align="center">🟥</td><td align="center">🟥</td><td align="center">🟥</td><td align="center">🟥</td><td align="center">🟦</td><td align="center">🟦</td></tr>
+    <tr><td align="center">🟩</td><td align="center">🟩</td><td align="center">·</td><td align="center">🟧</td><td align="center">·</td><td align="center">🟧</td><td align="center">🟨</td><td align="center">🟦</td></tr>
+    <tr><td align="center">⚪</td><td align="center">🟫</td><td align="center">🟫</td><td align="center">🟧</td><td align="center">🟧</td><td align="center">🟧</td><td align="center">🟨</td><td align="center">🟨</td></tr>
+    <tr><td align="center">⚪</td><td align="center">🟫</td><td align="center">🟫</td><td align="center">🟫</td><td align="center">·</td><td align="center">🟪</td><td align="center">🟨</td><td align="center">⬛</td></tr>
+    <tr><td align="center">⚪</td><td align="center">⬜</td><td align="center">⬜</td><td align="center">⬜</td><td align="center">⬜</td><td align="center">🟪</td><td align="center">⬛</td><td align="center">⬛</td></tr>
+    <tr><td align="center">⚪</td><td align="center">⚪</td><td align="center">⬜</td><td align="center">🟪</td><td align="center">🟪</td><td align="center">🟪</td><td align="center">⬛</td><td align="center">⚫</td></tr>
+    <tr><td align="center">·</td><td align="center">·</td><td align="center">·</td><td align="center">·</td><td align="center">·</td><td align="center">⚫</td><td align="center">⚫</td><td align="center">⚫</td></tr>
+  </tbody>
+</table>
 
 _此區塊由 `update_readme.py` 自動更新。_
 <!-- TODAY-SOLUTION-END -->
