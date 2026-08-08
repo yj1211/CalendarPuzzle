@@ -2,13 +2,13 @@
 <!-- TODAY-SOLUTION-START -->
 ## 今日解答
 
-以 `Asia/Taipei` 為準，今天是 **8 月 8 日 周六**。
+以 `Asia/Taipei` 為準，今天是 **8 月 9 日 周日**。
 
 <table>
   <tbody>
     <tr>
-      <td align="center">🟪</td>
-      <td align="center">🟧</td>
+      <td align="center">🟩</td>
+      <td align="center">🟩</td>
       <td align="center">🟧</td>
       <td align="center">🟧</td>
       <td align="center">🟥</td>
@@ -17,54 +17,54 @@
       <td align="center">🟥</td>
     </tr>
     <tr>
-      <td align="center">🟪</td>
+      <td align="center">🟩</td>
+      <td align="center">🟩</td>
       <td align="center">🟧</td>
       <td align="center">·</td>
+      <td align="center">🟦</td>
+      <td align="center">⬛</td>
+      <td align="center">⬛</td>
+      <td align="center">·</td>
+    </tr>
+    <tr>
+      <td align="center">🟫</td>
+      <td align="center">🟫</td>
       <td align="center">🟧</td>
-      <td align="center">🟩</td>
-      <td align="center">🟩</td>
-      <td align="center">🟨</td>
+      <td align="center">🟧</td>
+      <td align="center">🟦</td>
+      <td align="center">🟦</td>
+      <td align="center">⬛</td>
+      <td align="center">⬛</td>
+    </tr>
+    <tr>
+      <td align="center">🟫</td>
+      <td align="center">🟫</td>
+      <td align="center">🟫</td>
+      <td align="center">⬜</td>
       <td align="center">·</td>
+      <td align="center">🟪</td>
+      <td align="center">🟪</td>
+      <td align="center">🟪</td>
     </tr>
     <tr>
-      <td align="center">🟪</td>
-      <td align="center">🟪</td>
-      <td align="center">🟪</td>
-      <td align="center">·</td>
-      <td align="center">🟩</td>
-      <td align="center">🟩</td>
-      <td align="center">🟨</td>
-      <td align="center">🟨</td>
-    </tr>
-    <tr>
-      <td align="center">⬛</td>
-      <td align="center">⬛</td>
+      <td align="center">⚪</td>
       <td align="center">⬜</td>
       <td align="center">⬜</td>
       <td align="center">⬜</td>
       <td align="center">⬜</td>
       <td align="center">🟨</td>
-      <td align="center">🟦</td>
-    </tr>
-    <tr>
-      <td align="center">⚪</td>
-      <td align="center">⬛</td>
-      <td align="center">⬛</td>
-      <td align="center">⬜</td>
-      <td align="center">🟫</td>
-      <td align="center">🟫</td>
-      <td align="center">🟦</td>
-      <td align="center">🟦</td>
-    </tr>
-    <tr>
-      <td align="center">⚪</td>
-      <td align="center">⚪</td>
-      <td align="center">⚪</td>
-      <td align="center">⚪</td>
-      <td align="center">🟫</td>
-      <td align="center">🟫</td>
-      <td align="center">🟫</td>
       <td align="center">⚫</td>
+      <td align="center">🟪</td>
+    </tr>
+    <tr>
+      <td align="center">⚪</td>
+      <td align="center">⚪</td>
+      <td align="center">⚪</td>
+      <td align="center">⚪</td>
+      <td align="center">🟨</td>
+      <td align="center">🟨</td>
+      <td align="center">⚫</td>
+      <td align="center">🟪</td>
     </tr>
     <tr>
       <td align="center">·</td>
@@ -72,7 +72,7 @@
       <td align="center">·</td>
       <td align="center">·</td>
       <td align="center">·</td>
-      <td align="center">⚫</td>
+      <td align="center">🟨</td>
       <td align="center">⚫</td>
       <td align="center">⚫</td>
     </tr>
