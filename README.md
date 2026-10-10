@@ -2,7 +2,7 @@
 <!-- TODAY-SOLUTION-START -->
 ## 今日解答
 
-以 `Asia/Taipei` 為準，今天是 **10 月 10 日 周六**。
+以 `Asia/Taipei` 為準，今天是 **10 月 11 日 周日**。
 
 <table>
   <tbody>
@@ -19,52 +19,52 @@
     <tr>
       <td align="center">🟩</td>
       <td align="center">🟩</td>
+      <td align="center">🟫</td>
       <td align="center">·</td>
-      <td align="center">🟨</td>
       <td align="center">🟪</td>
       <td align="center">🟪</td>
       <td align="center">🟪</td>
       <td align="center">🟧</td>
     </tr>
     <tr>
-      <td align="center">🟦</td>
-      <td align="center">🟦</td>
-      <td align="center">🟨</td>
-      <td align="center">🟨</td>
+      <td align="center">⚪</td>
+      <td align="center">🟫</td>
+      <td align="center">🟫</td>
+      <td align="center">⚫</td>
       <td align="center">🟪</td>
       <td align="center">·</td>
       <td align="center">🟧</td>
       <td align="center">🟧</td>
     </tr>
     <tr>
+      <td align="center">⚪</td>
       <td align="center">🟫</td>
-      <td align="center">🟦</td>
+      <td align="center">🟫</td>
       <td align="center">⚫</td>
-      <td align="center">🟨</td>
       <td align="center">🟪</td>
-      <td align="center">·</td>
-      <td align="center">⚪</td>
       <td align="center">⬜</td>
+      <td align="center">·</td>
+      <td align="center">🟨</td>
     </tr>
     <tr>
-      <td align="center">🟫</td>
-      <td align="center">🟫</td>
+      <td align="center">⚪</td>
+      <td align="center">⬛</td>
+      <td align="center">⬛</td>
       <td align="center">⚫</td>
-      <td align="center">⚪</td>
-      <td align="center">⚪</td>
-      <td align="center">⚪</td>
-      <td align="center">⚪</td>
+      <td align="center">⚫</td>
       <td align="center">⬜</td>
+      <td align="center">🟨</td>
+      <td align="center">🟨</td>
     </tr>
     <tr>
-      <td align="center">🟫</td>
-      <td align="center">🟫</td>
-      <td align="center">⚫</td>
-      <td align="center">⚫</td>
+      <td align="center">⚪</td>
+      <td align="center">⚪</td>
       <td align="center">⬛</td>
       <td align="center">⬛</td>
       <td align="center">⬜</td>
       <td align="center">⬜</td>
+      <td align="center">🟦</td>
+      <td align="center">🟨</td>
     </tr>
     <tr>
       <td align="center">·</td>
@@ -72,9 +72,9 @@
       <td align="center">·</td>
       <td align="center">·</td>
       <td align="center">·</td>
-      <td align="center">⬛</td>
-      <td align="center">⬛</td>
       <td align="center">⬜</td>
+      <td align="center">🟦</td>
+      <td align="center">🟦</td>
     </tr>
   </tbody>
 </table>
